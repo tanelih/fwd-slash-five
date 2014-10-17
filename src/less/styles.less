@@ -1,6 +1,3 @@
-/**
- * TODO only include what we really need?
- */
 @import "bootstrap/less/bootstrap";
 
 /**
@@ -27,9 +24,20 @@ textarea {
 }
 
 /**
- * Map
+ * App Page
  */
 
+.page {
+	width: 100%;
+
+	.page-content {
+		max-width: 480px;
+	}
+}
+
+/**
+ * Map
+ */
 
 .map-container {
 	height:        256px;
@@ -68,17 +76,10 @@ textarea {
 	}
 }
 
-.page {
-	width: 100%;
-
-	.page-content {
-		max-width: 480px;
-	}
-}
-
 /**
  * Rating
  */
+
 .rating {
 
 	margin-bottom: 15px;
@@ -149,144 +150,3 @@ textarea {
 		color: @gray-light;
 	}
 }
-
-
-
-/**
-.shadow (@color) {
-	-webkit-box-shadow: 0px 0px 16px 8px @color;
-	-moz-box-shadow:    0px 0px 16px 8px @color;
-	box-shadow:         0px 0px 16px 8px @color;
-}
-
-.shadow-transition {
-	.transition(box-shadow         0.5s linear);
-	.transition(-moz-box-shadow    0.5s linear);
-	.transition(-webkit-box-shadow 0.5s linear);
-}
-
-#app {
-	textarea {
-		resize: none;
-	}
-
-	.no-padding {
-		padding-left:  0px !important;
-		padding-right: 0px !important;
-	}
-
-	.map-container {
-		margin-bottom:    16px;
-		background-color: @gray-lighter;
-
-		#map {
-			height: 256px;
-		}
-
-		.icon-review {
-			width:  24px !important;
-			height: 24px !important;
-
-			color:       #FFF;
-			line-height: 22px;
-			text-align:  center;
-
-			border:        1px solid #FFF;
-			border-radius: 50%;
-
-			&.rating-1 {
-				background-color: @brand-danger;
-			}
-
-			&.rating-2 {
-				background-color: @brand-warning;
-			}
-
-			&.rating-3 {
-				background-color: @brand-success;
-			}
-
-			&.rating-4 {
-				background-color: @brand-info;
-			}
-
-			&.rating-5 {
-				background-color: @brand-primary;
-			}
-		}
-	}
-
-	.new-review-container {
-
-		.rating-container {
-			height: 32px;
-
-			.star {
-				@star-hover:    fade(@brand-primary, 65%);
-				@star-selected: @brand-primary;
-
-				width:  32px;
-				height: 32px;
-
-				margin: 0 auto;
-
-				border:        1px solid @star-hover;
-				border-radius: 50%;
-
-				.star-inner {
-					width:  28px;
-					height: 28px;
-
-					margin:     0 auto;
-					margin-top: 1px;
-
-					border-radius: 50%;
-
-					.transition(background-color .25s linear);
-
-					&:hover {
-						background-color: @star-hover;
-					}
-				}
-
-				&.selected {
-					.star-inner {
-						background-color: @star-selected;
-					}
-				}
-			}
-		}
-
-		.comment-container {
-			margin-top: 16px;
-
-			.comment-box {
-				padding-left:  15px;
-				padding-right: 15px;
-			}
-		}
-	}
-
-	.review-list-container {
-		padding-left:  15px;
-		padding-right: 15px;
-
-		.review-list-item {
-			.nickname {
-				color:         @gray-light;
-				font-weight:   bold;
-			}
-
-			.comment {
-				overflow:      hidden;
-				white-space:   nowrap;
-				text-overflow: ellipsis;
-			}
-
-			.label {
-				float: right;
-			}
-		}
-	}
-}
-*/
