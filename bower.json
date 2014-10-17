@@ -1,0 +1,10 @@
+{
+  "name": "fwd-slash-five",
+  "version": "0.0.0",
+  "description": "rate everything",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "bootstrap": "~3.2.0"
+  }
+}
